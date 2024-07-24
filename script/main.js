@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
     cancelButtonText: 'No',
   }).then((result) => {
     if (result.isConfirmed) {
-      document.querySelector('.song').play();
+      document.querySelector('hbd.mpeg').play();
       resolveFetch().then(animationTimeline());
     } else {
       resolveFetch().then(animationTimeline());
